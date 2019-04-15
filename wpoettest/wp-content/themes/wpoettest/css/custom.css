@@ -1,0 +1,226 @@
+:focus {
+    outline: 0 none !important;
+}
+body {
+	color: #fff;
+    background: #10324D;
+}
+.delphianlogic-services-wrap {
+    padding: 50px 0;
+}
+.service-type-list-wrap {
+	background: #F6F6F6;
+}
+.service-type-list {
+	padding: 65px 15px;
+	border: 0 none;
+	margin: 0;
+}
+.service-type-item + .service-type-item {
+    margin-top: 27px;
+}
+.service-type-item > a {
+    background: #fff;
+    padding: 15px 20px;
+	color: #555 !important;
+	cursor: pointer;
+    font-weight: bold;
+	font-size: 16px;
+	width: 100%;
+	text-decoration: none;
+}
+.service-type-item img {
+    margin-right: 15px;
+}
+.service-type-item a.active,
+.service-type-item a:hover {
+    box-shadow: 2px 4px 5px rgba(51,51,51,0.2);
+}
+.service-type-item-content {
+    background: #63B4C9;
+}
+.service-type-item > a {
+    position: relative;
+}
+.service-type-item > a.active:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #63b5c9 transparent transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -15px;
+    margin: auto;
+}
+.service-post-image-list-wrap {
+    position: relative;
+}
+.service-post-image {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.service-type-item-content .tab-pane .slick-track,
+.service-type-item-content .tab-pane .slick-list {
+    height: 100%;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.btn-link:hover,
+a:hover, a:focus {
+    color: #10324D;
+    text-decoration: none;
+}
+a:hover path, a:focus path {
+    fill: #10324D;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+}
+.slick-dots li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px;
+}
+.slick-dots button {
+    font-size: 0;
+    background: transparent;
+    border: 2px solid #fff;
+    width: 13px;
+    height: 13px;
+    display: block;
+    padding: 0;
+    border-radius: 50%;
+    opacity: 0.4;
+    line-height: 1;
+}
+.slick-dots .slick-active button, .slick-dots button:hover, .slick-dots button:focus {
+    background: #fff;
+}
+.service-post-list {
+    padding: 20px 20px 50px;
+}
+
+
+
+
+@media screen and (max-width:992px) {
+.mobile-services-wrap .card {
+    border: 0 none;
+    border-radius: 0;
+    background: transparent;
+}
+.mobile-services-wrap .card + .card {
+    margin-top: 15px;
+}
+.mobile-services-wrap .card-header {
+    padding: 0;
+    border-radius: 2px;
+    background: #FFFFFF;
+    border: 0 none;
+}
+.mobile-services-wrap .card-header a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 15px 50px 15px 15px;
+    font-size: 16px;
+    color: #555 !important;
+    font-weight: bold;
+    position: relative;
+}
+.mobile-services-wrap .card-header a img {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+.mobile-services-wrap .card-header a:after {
+    content: "";
+    background-image: url(../images/plus.svg);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: 0;
+}
+.mobile-services-wrap .card-header a[aria-expanded="true"]:after {
+    background-image: url(../images/minus.svg);
+}
+.mobile-services-wrap .card-body {
+    padding: 0;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+.mobile-services-wrap .card-body:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #63b5c9 transparent;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.mobile-service-post-list-wrap {
+    position: relative;
+    padding: 50px 20px 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
+.mobile-service-post-list-wrap:after {
+    content: "";
+    background: rgba(99,181,201,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.mobile-service-post-list-wrap * {
+    position: relative;
+    z-index: 1;
+}
+.mobile-services-wrap .card-body .slick-dots {
+    width: 100%;
+}
+.collapse:not(.show) {
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.collapse.show {
+    height: auto;
+}
+
+
+
+}
